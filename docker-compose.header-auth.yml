@@ -25,6 +25,10 @@ services:
     environment:
       HEADER_AUTH_ENABLE: 'true'
 
+  traefik:
+    ports:
+      - 8090:8090
+
 
 
 

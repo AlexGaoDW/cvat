@@ -364,7 +364,7 @@ function HeaderContainer(props: Props): JSX.Element {
             <Menu.Item
                 key='logout'
                 icon={logoutFetching ? <LoadingOutlined /> : <LogoutOutlined />}
-                onClick={() => onLogout()}
+                onClick={onLogout}
                 disabled={logoutFetching}
             >
                 Logout
