@@ -28,7 +28,3 @@ services:
   traefik:
     ports:
       - 8090:8090
-
-
-
-
