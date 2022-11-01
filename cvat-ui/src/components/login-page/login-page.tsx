@@ -17,7 +17,7 @@ import LoginForm, { LoginData } from './login-form';
 interface LoginPageComponentProps {
     fetching: boolean;
     renderResetPassword: boolean;
-    onLogin: (username: string, password: string) => void;
+    onLogin: (credential: string, password: string) => void;
     isHeaderAuthActive: boolean;
 }
 
@@ -52,7 +52,7 @@ function LoginPageComponent(props: LoginPageComponentProps & RouteComponentProps
                         <LoginForm
                             fetching={fetching}
                             onSubmit={(loginData: LoginData): void => {
-                                onLogin(loginData.username, loginData.password);
+                                onLogin(loginData.credential, loginData.password);
                             }}
                         />
                         <Row justify='start' align='top'>
